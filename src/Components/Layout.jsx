@@ -1,12 +1,12 @@
 import React from "react";
 
 import { NavSidebar } from "./NavSidebar";
-import BodyWrapper from "./BodyWrapper";
+import BodyWrapper from "./BodyWraper";
 
 export const DashboardLayout = ({ children }) => {
   return (
     <BodyWrapper>
-      <div className="flex h-screen bg-gray-200">
+      <div className="flex h-screen bg-white">
         <NavSidebar />
 
         <div className="flex flex-col flex-1 overflow-hidden">
