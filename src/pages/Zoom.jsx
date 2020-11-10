@@ -2,12 +2,12 @@ import React from 'react';
 
 import {DashboardLayout} from '../Components/Layout';
 
-const ProjectsPage = () => {
+const ZoomTab = () => {
   return (
     <DashboardLayout>
-      <h2>Projects Page</h2>
+
     </DashboardLayout>
   )
 }
 
-export default ProjectsPage;
+export default ZoomTab;

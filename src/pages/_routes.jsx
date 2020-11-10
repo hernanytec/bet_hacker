@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SettingsPage from "./settings";
 import ProjectsPage from "./projects";
 import MembersPage from "./members";
-import AboutPage from "./about";
+import ZoomTab from "./Zoom";
 import TeamsPage from "./teams";
-import HomePage from "./home";
+import HomePage from "./teams";
 
 const Routes = () => {
   return (
@@ -18,8 +18,8 @@ const Routes = () => {
         <Route path="/about/projects">
           <ProjectsPage />
         </Route>
-        <Route path="/about">
-          <AboutPage />
+        <Route path="/zoom">
+          <ZoomTab />
         </Route>
         <Route path="/another/teams">
           <TeamsPage />

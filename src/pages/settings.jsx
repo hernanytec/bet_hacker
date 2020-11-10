@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {DashboardLayout} from '../components/Layout';
+import {DashboardLayout} from '../Components/Layout';
 
 const SettingsPage = () => {
   return (
