@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from './pages/_app';
 
-import './styles/min.bundle.css';
+import './styles/main.bundle.css';
 
 ReactDOM.render(
   <React.StrictMode>

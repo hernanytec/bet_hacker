@@ -3,26 +3,26 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import SettingsPage from "./settings";
 import ProjectsPage from "./projects";
-import MembersPage from "./members";
-import ZoomTab from "./Zoom";
-import TeamsPage from "./teams";
-import HomePage from "./teams";
+import MembersPage from "./Bookmakers";
+import SportsPage from "./Sports";
+import ZoomPage from "./Zoom";
+import HomePage from "./Home";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/about/members">
+        <Route path="/members">
           <MembersPage />
         </Route>
-        <Route path="/about/projects">
+        <Route path="/bookmakers">
           <ProjectsPage />
         </Route>
-        <Route path="/zoom">
-          <ZoomTab />
+        <Route path="/sports">
+          <SportsPage/>
         </Route>
-        <Route path="/another/teams">
-          <TeamsPage />
+        <Route path="/zoom">
+          <ZoomPage />
         </Route>
         <Route path="/settings">
           <SettingsPage />
