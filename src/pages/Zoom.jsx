@@ -2,12 +2,12 @@ import React from 'react';
 
 import {DashboardLayout} from '../components/Layout';
 
-const TeamsPage = () => {
+const ZoomPage = () => {
   return (
     <DashboardLayout>
-   <h2>Zoom</h2>
+
     </DashboardLayout>
   )
 }
 
-export default TeamsPage;
+export default ZoomPage;

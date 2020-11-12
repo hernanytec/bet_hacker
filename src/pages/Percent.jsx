@@ -2,7 +2,7 @@ import React from 'react';
 
 import {DashboardLayout} from '../components/Layout';
 
-const SportsPage = () => {
+const PercentPage = () => {
   return (
     <DashboardLayout>
 
@@ -10,4 +10,4 @@ const SportsPage = () => {
   )
 }
 
-export default SportsPage;
+export default PercentPage;

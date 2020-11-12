@@ -1,13 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import {DashboardLayout} from '../components/Layout';
+import { DashboardLayout } from "../components/Layout";
 
 const BookmakersPage = () => {
-  return (
-    <DashboardLayout>
-     
-    </DashboardLayout>
-  )
-}
+  return <DashboardLayout></DashboardLayout>;
+};
 
 export default BookmakersPage;

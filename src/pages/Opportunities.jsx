@@ -2,12 +2,11 @@ import React from 'react';
 
 import {DashboardLayout} from '../components/Layout';
 
-const HomePage = () => {
+const OpportunitiesPage = () => {
   return (
     <DashboardLayout>
-      
     </DashboardLayout>
   )
 }
 
-export default HomePage;
+export default OpportunitiesPage;
