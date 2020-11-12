@@ -7,11 +7,16 @@ import MembersPage from "./Bookmakers";
 import SportsPage from "./Sports";
 import ZoomPage from "./Zoom";
 import HomePage from "./Home";
+import SignIn from "./SignIn";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/login">
+          <SignIn />
+        </Route>
+
         <Route path="/members">
           <MembersPage />
         </Route>
