@@ -33,23 +33,23 @@ export const NavSidebar = () => {
               itemId: "/Opportunities",
             },
             {
-              elemBefore: () => <FaSearchPlus style={{ fontSize: 35 }}/>,
+              elemBefore: () => <FaSearchPlus style={{ fontSize: 25 }}/>,
               itemId: "/zoom",
             },
             {
-              elemBefore: () => <HiOutlineSwitchVertical style={{ fontSize: 35 }} />,
+              elemBefore: () => <HiOutlineSwitchVertical style={{ fontSize: 30 }} />,
               itemId: "/projects",
             },
             {
-              elemBefore: () => <AiOutlineUnorderedList style={{ fontSize: 35 }}/>,
+              elemBefore: () => <AiOutlineUnorderedList style={{ fontSize: 30 }}/>,
               itemId: "/bookmakers",
             },
             {
-              elemBefore: () => <AiOutlinePercentage style={{ fontSize: 35 }}/>,
+              elemBefore: () => <AiOutlinePercentage style={{ fontSize: 30 }}/>,
               itemId: "/percent",
             },
             {
-              elemBefore: () => <BiBasketball style={{ fontSize: 35 }}/>,
+              elemBefore: () => <BiBasketball style={{ fontSize: 30 }}/>,
               itemId: "/sports",
             },
           ]}
@@ -61,7 +61,7 @@ export const NavSidebar = () => {
             items={[
               {
                 itemId: "/Setings",
-                elemBefore: () => <DiAptana style={{ fontSize: 40 }}/>,
+                elemBefore: () => <DiAptana style={{ fontSize: 30 }}/>,
               },
             ]}
             onSelect={({ itemId }) => {
