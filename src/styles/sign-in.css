@@ -117,6 +117,72 @@ input:focus, button:focus {
     flex-direction: column;
 }
 
+.sign-in .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in .group {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.sign-in .group input[type="checkbox"] {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    color: black;
+    border: 1px solid #04D361;
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+.sign-in .group input[type="checkbox"]::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 4px;
+    width: 6px;
+    height: 12px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.sign-in .group input[type="checkbox"]:checked {
+    color: white;
+    border-color: #04D361;
+    background: #04D361;
+}
+
+.sign-in .group input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+.sign-in .group input[type="checkbox"]:checked::before ~ label::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.sign-in .group label {
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+.sign-in .group span {
+    font-size: .8rem;
+    color: #04D361;
+    cursor: pointer;
+}
+
 .to-right-init-left {
     animation: left-right-from-left 0.8s forwards;
     -webkit-animation: left-right-from-left 0.8s forwards;

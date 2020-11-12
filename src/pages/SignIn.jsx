@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from "../components/Button";
 import Input from "../components/Input";
 
@@ -7,6 +7,21 @@ import rightBg from "../assets/right.jpg"
 
 const SignIn = () => {
   const [signUp, setSignUp] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const doSignIn = () => {
+    // TODO implementar Login aqui
+    console.log(name, email, password, confirmPassword, rememberMe);
+  }
+
+  const doSignUp = () => {
+    // TODO implementar Cadastro aqui
+    console.log(name, email, password, confirmPassword, rememberMe);
+  }
 
   return (
     <section className="sign-in">
@@ -45,10 +60,26 @@ const SignIn = () => {
               <h2>Sign in to BetHacker</h2>
             </div>
 
-            <Input placeholder="Email" />
-            <Input placeholder="Password" />
+            <Input placeholder="Email"  type="email" value={email} onChange={setEmail} />
+            <Input placeholder="Password"  type="password" value={password} onChange={setPassword}  />
 
-            <Button title="Login" />
+            <div className="wrap">
+              <div className="group">
+                <input
+                  className="checkbox"
+                  type="checkbox"
+                  value={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                />
+                <label htmlFor="scales">Remember me</label>
+              </div>
+
+              <div className="group">
+                <span onClick={() => {}}>Forgot password?</span>
+              </div>
+            </div>
+
+            <Button title="Login" onClick={doSignIn} />
 
             <div style={{marginTop: "25px", fontSize: ".8rem"}}>
               <span> Don't have an account? </span>
@@ -64,11 +95,11 @@ const SignIn = () => {
               <h2>Create Account</h2>
             </div>
 
-            <Input placeholder="Name" />
-            <Input placeholder="Email" />
-            <Input placeholder="Password" />
-            <Input placeholder="Confirm password" />
-            <Button title="Login" />
+            <Input placeholder="Name"  type="text" value={name} onChange={setName}  />
+            <Input placeholder="Email"  type="email" value={email} onChange={setEmail}  />
+            <Input placeholder="Password"  type="password" value={password} onChange={setPassword}  />
+            <Input placeholder="Confirm password" type="password" value={confirmPassword} onChange={setConfirmPassword}  />
+            <Button title="Login" onClick={doSignUp} />
 
             <div style={{marginTop: "25px", fontSize: ".8rem"}}>
               <span> Have an account? </span>
