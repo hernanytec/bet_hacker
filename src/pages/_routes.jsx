@@ -3,32 +3,43 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import SettingsPage from "./settings";
 import ProjectsPage from "./projects";
-import MembersPage from "./Bookmakers";
+import BookmakersPage from "./Bookmakers";
 import SportsPage from "./Sports";
 import ZoomPage from "./Zoom";
-import HomePage from "./Home";
+import OpportunitiesPage from "./Opportunities";
+import PercentPage from "./Percent";
+
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/members">
-          <MembersPage />
+        <Route path="/Bookmakers">
+          <BookmakersPage />
         </Route>
-        <Route path="/bookmakers">
+        
+        <Route path="/projects">
           <ProjectsPage />
         </Route>
+
         <Route path="/sports">
           <SportsPage/>
         </Route>
+        
         <Route path="/zoom">
           <ZoomPage />
         </Route>
+        
         <Route path="/settings">
           <SettingsPage />
         </Route>
+        
+        <Route path="/percent">
+          <PercentPage />
+        </Route>
+        
         <Route path="/">
-          <HomePage />
+          <OpportunitiesPage />
         </Route>
       </Switch>
     </BrowserRouter>

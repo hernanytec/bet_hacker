@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2500" height="3780" viewBox="0 0 2500 3780">
+  <defs>
+    <clipPath id="clip-landind_page">
+      <rect width="2500" height="3780"/>
+    </clipPath>
+  </defs>
+  <g id="landind_page" data-name="landind page" clip-path="url(#clip-landind_page)">
+    <rect width="2500" height="3780" fill="#fff"/>
+    <text id="Home" transform="translate(65 88)" fill="#04d361" font-size="35" font-family="Helvetica" letter-spacing="0.071em"><tspan x="0" y="0">Home</tspan></text>
+    <text id="About" transform="translate(257 88)" fill="#7a7a7a" font-size="35" font-family="Helvetica" letter-spacing="0.071em"><tspan x="0" y="0">About</tspan></text>
+    <text id="Services" transform="translate(484 88)" fill="#7a7a7a" font-size="35" font-family="Helvetica" letter-spacing="0.071em"><tspan x="0" y="0">Services</tspan></text>
+    <text id="Technologies" transform="translate(749 88)" fill="#7a7a7a" font-size="35" font-family="Helvetica" letter-spacing="0.071em"><tspan x="0" y="0">Technologies</tspan></text>
+  </g>
+</svg>

@@ -538,7 +538,7 @@
   embed,
   object {
     display: block;
-    vertical-align: middle;
+
   }
   
   /**
@@ -586,9 +586,6 @@
     }
   }
   
-  /* Stop purging. */
-  
-  /* Write you own custom component styles here */
   
   .sidebar-overlay {
     position: fixed;
@@ -629,13 +626,14 @@
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
     border-right-width: 2px;
-    
+  }
     .header {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 2.5rem;
-      span {
+    }
+      .span {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         font-size: 1.5rem;
@@ -644,7 +642,10 @@
         color: #000;
         color: rgba(0, 0, 0, var(--text-opacity));
       }
-    }
+    
+  
+
+     
     nav {
       margin-top: 2.5rem;
     }
@@ -655,16 +656,13 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
-  }
+  
   
   .ease-in-animation {
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  /* Start purging... */
-  
   .space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

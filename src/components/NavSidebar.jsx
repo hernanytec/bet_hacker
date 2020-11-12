@@ -1,31 +1,27 @@
-import { Navigation } from "react-minimal-side-navigation";
+import { Navigation } from "react-minimal-side-navigation"; 
 import { useHistory, useLocation } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
+import { DiAptana } from "react-icons/di";
+import { FaSearchPlus } from "react-icons/fa";
+import { HiOutlineSwitchVertical } from "react-icons/hi";
+import { AiOutlinePercentage, AiOutlineUnorderedList } from "react-icons/ai";
+import { BiBasketball} from "react-icons/bi";
+import BetHackerIcon from '../BetHackerIcon.jpeg'
+
 
 import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
 
 export const NavSidebar = () => {
   const history = useHistory();
   const location = useLocation();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  
 
   return (
     <React.Fragment>
       <div
-        onClick={() => setIsSidebarOpen(false)}
-        className={`fixed inset-0 z-20 block transition-opacity bg-black opacity-50 lg:hidden ${
-          isSidebarOpen ? "block" : "hidden"
-        }`}
-      />
-
-
-<div
-        className={`fixed inset-y-0 left-0 z-30 w-30 overflow-y-auto transition duration-300 ease-out transform translate-x-0 bg-black border-r-2 lg:translate-x-0 lg:static lg:inset-0 ${
-          isSidebarOpen ? "ease-out translate-x-0" : "ease-in -translate-x-full"
+        className={`fixed inset-y-0 left-0 z-30 w-24 transition duration-300 ease-out transform translate-x-0 bg-black border-r-2 lg:translate-x-0 lg:static lg:inset-0 "
         }`}
       >
-       
-        
         <Navigation
           activeItemId={location.pathname}
           onSelect={({ itemId }) => {
@@ -33,25 +29,29 @@ export const NavSidebar = () => {
           }}
           items={[
             {
-              title: "Home",
-              itemId: "/home",
+              elemBefore: () => <img src={BetHackerIcon}/>,
+              itemId: "/Opportunities",
             },
             {
-              title: "Zoom",
+              elemBefore: () => <FaSearchPlus style={{ fontSize: 35 }}/>,
               itemId: "/zoom",
             },
             {
-              title: "Projects",
+              elemBefore: () => <HiOutlineSwitchVertical style={{ fontSize: 35 }} />,
               itemId: "/projects",
             },
             {
-              title: "Bookmakers",
+              elemBefore: () => <AiOutlineUnorderedList style={{ fontSize: 35 }}/>,
               itemId: "/bookmakers",
             },
             {
-              title: "Sports",
+              elemBefore: () => <AiOutlinePercentage style={{ fontSize: 35 }}/>,
+              itemId: "/percent",
+            },
+            {
+              elemBefore: () => <BiBasketball style={{ fontSize: 35 }}/>,
               itemId: "/sports",
-            }
+            },
           ]}
         />
 
@@ -60,9 +60,9 @@ export const NavSidebar = () => {
             activeItemId={location.pathname}
             items={[
               {
-                title: "Setings",
                 itemId: "/Setings",
-              }
+                elemBefore: () => <DiAptana style={{ fontSize: 40 }}/>,
+              },
             ]}
             onSelect={({ itemId }) => {
               history.push(itemId);
