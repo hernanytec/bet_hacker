@@ -29,7 +29,7 @@ export const NavSidebar = () => {
           }}
           items={[
             {
-              elemBefore: () => <img src={BetHackerIcon}/>,
+              elemBefore: () => <img src={BetHackerIcon} alt="bet hacker icon" />,
               itemId: "/Opportunities",
             },
             {
