@@ -13,10 +13,11 @@
 }
 
 .nav-expanded .title{
-    margin-top: 20px;
+    height: 57px;
+    line-height: 57px;
     font-weight: bold;
 }
 
 .nav-expanded .wrapper{
-    margin-top: 30px;
+    margin-top: 60px;
 }
