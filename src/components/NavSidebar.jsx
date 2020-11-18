@@ -55,8 +55,8 @@ export const NavSidebar = () => {
       <div className="nav-filters">
 
         {
-          items.map(item => (
-            <div onClick={() => changeSelected(item.id)} className={`nav-sidebar__item ${getClasses(item.id)}`}>
+          items.map((item, index) => (
+            <div key={index} onClick={() => changeSelected(item.id)} className={`nav-sidebar__item ${getClasses(item.id)}`}>
               { item.render()}
             </div>
           ))

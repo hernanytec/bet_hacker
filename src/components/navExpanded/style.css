@@ -1,0 +1,22 @@
+.nav-expanded{
+    background: white;
+    width: 150px;
+    height: 100vh;
+    border-top-right-radius: 20px;
+}
+
+.nav-expanded .content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.nav-expanded .title{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.nav-expanded .wrapper{
+    margin-top: 30px;
+}
