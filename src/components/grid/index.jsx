@@ -120,22 +120,22 @@ const Grid = ({ filters }) => {
                                             </TableCell>
                                             <TableCell className="odd grid-row__event">
                                                 <div className="odd-a">
-                                                    <span className="title">event title</span>
-                                                    <span className="subtitle">event subtitle</span>
+                                                    <span className="title">{jogo.localteam}</span>
+                                                    <span className="subtitle">{jogo.name}</span>
                                                 </div>
                                                 <hr />
                                                 <div className="odd-b">
-                                                    <span className="title">event title</span>
-                                                    <span className="subtitle">event subtitle</span>
+                                                    <span className="title">{jogo.awayteam}</span>
+                                                    <span className="subtitle">{jogo.name}</span>
                                                 </div>
                                             </TableCell>
                                             <TableCell className="odd grid-row__market">
                                                 <div className="odd-a">
-                                                    {odd_a.type} 1
+                                                    {odd_a.type}
                                                 </div>
                                                 <hr />
                                                 <div className="odd-b">
-                                                    {odd_b.type} 2
+                                                    {odd_b.type}
                                                 </div>
                                             </TableCell>
                                             <TableCell className="odd grid-row__quota">
