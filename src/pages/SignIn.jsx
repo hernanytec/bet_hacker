@@ -122,7 +122,7 @@ const SignIn = () => {
             <Input placeholder="Email" type="email" value={email} onChange={setEmail} />
             <Input placeholder="Password" type="password" value={password} onChange={setPassword} />
             <Input placeholder="Confirm password" type="password" value={confirmPassword} onChange={setConfirmPassword} />
-            <Button title="Login" onClick={doSignUp} />
+            <Button title="Register" onClick={doSignUp} />
 
             <div style={{ marginTop: "25px", fontSize: ".8rem" }}>
               <span> Have an account? </span>
