@@ -6,6 +6,7 @@
 .container {
     display: flex;
     flex: 1;
+    margin-top: 10px;
 }
 .container button{
     width: 30px;
