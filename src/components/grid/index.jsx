@@ -144,7 +144,7 @@ const Grid = ({ filters }) => {
                                                 </div>
                                                 <hr />
                                                 <div className="odd-b">
-                                                {odd_a.value}
+                                                {odd_b.value}
                                                 </div>
                                             </TableCell>
                                             <TableCell className="odd grid-row__last"/>
