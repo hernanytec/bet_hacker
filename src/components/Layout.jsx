@@ -3,7 +3,10 @@ import React from "react";
 import { NavSidebar } from "./NavSidebar";
 import BodyWrapper from "./BodyWrapper";
 
-export const DashboardLayout = ({ children }) => {
+import Grid from '../components/grid';
+import BetHeader from '../components/bet-header';
+
+export const DashboardLayout = ({ children, filters, showGrid=true }) => {
   return (
     <BodyWrapper>
       <div className="flex h-screen bg-white">
@@ -16,7 +19,19 @@ export const DashboardLayout = ({ children }) => {
                 className="content-box"
                 style={{ flexGrow: 2, backgroundColor: '#eee' }}
               >
-                {children}
+                <div className="flex flex-row">
+                  {children}
+                  {
+                    showGrid 
+                    ? (
+                      <div className="flex flex-col flex-1" style={{margin: '25px 32px'}}>
+                      <BetHeader />
+                      <Grid filters={filters} />
+                      </div>
+                    )
+                    : null
+                  }
+                </div>
               </div>
             </section>
           </main>

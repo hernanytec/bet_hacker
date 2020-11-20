@@ -2,6 +2,8 @@
     height: 100vh;
     width: 80px;
     background: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-sidebar--expanded{
@@ -17,8 +19,8 @@
 }
 
 .nav-config{
-    position: relative;
-    top: 40%;
+    margin-top: auto;
+    margin-bottom: 40px;
 }
 
 .nav-sidebar__item{
@@ -27,12 +29,19 @@
     color: white;
     font-size: 30px;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .nav-sidebar__item--selected{
     background: white;
     color: black;
-    margin-left: auto;
     border-radius: 10px 0 0 10px;
+}
+
+.nav-sidebar__item--selected .svg .b{
+    stroke: black;
+}
+
+.svg{
+    width: 30px;
 }

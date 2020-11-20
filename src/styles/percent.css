@@ -1,0 +1,25 @@
+.percent-title{
+    font-weight: 600;
+    font-family: Segoe UI;
+}
+
+.percent .inputs {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.percent .inputs hr{
+    width: 20px;
+    height: .5px;
+    background-color: #B3B3B3;
+}
+
+.percent .inputs input {
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 50px;
+    border: 1px solid #707070;
+}

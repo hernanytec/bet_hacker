@@ -1,5 +1,10 @@
 import api from './api'
 
+export const getCurrentSession = async () =>{
+    const session = await JSON.parse(localStorage.getItem('session'))
+    return session
+}
+
 const generateAuthorizationHeader = () => {
     const username = 'angularapp'
     const password = '12345'

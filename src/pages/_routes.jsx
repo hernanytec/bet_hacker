@@ -9,6 +9,7 @@ import ZoomPage from "./Zoom";
 import SignIn from "./SignIn";
 import OpportunitiesPage from "./Opportunities";
 import PercentPage from "./Percent";
+import ListPage from "./List";
 
 const Routes = () => {
   return (
@@ -18,7 +19,7 @@ const Routes = () => {
           <SignIn />
         </Route>
 
-        <Route path="/Bookmakers">
+        <Route path="/bookmarks">
           <BookmakersPage />
         </Route>
         
@@ -34,6 +35,10 @@ const Routes = () => {
           <ZoomPage />
         </Route>
         
+        <Route path="/list">
+          <ListPage />
+        </Route>
+
         <Route path="/settings">
           <SettingsPage />
         </Route>

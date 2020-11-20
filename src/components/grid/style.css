@@ -1,0 +1,196 @@
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-wrapper{
+    box-shadow: none !important;
+    max-height: 90vh;
+}
+
+.grid-header{
+    background: #eee;
+}
+
+.grid-header th{
+    font-family: Segoe UI;
+    color: #5D646E;
+    border: none;
+    padding: 5px;
+}
+
+.top-info{
+    font-family: Segoe UI;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.top-info .opportunities .value{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.top-info .matches .value{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.grid-body{
+    display: flex;
+}
+
+.grid-body tr{
+    color: red;
+    margin-top: 10px;
+}
+
+.row-container{
+    margin: 20px 0;
+    background: red;
+}
+
+.MuiPaper-root{
+    background-color: transparent !important;
+}
+
+table { 
+    border-collapse:separate !important; 
+    border-spacing:0 12px !important;
+}
+.grid-row{
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 0px 1px 3px #5a5a5a29;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    padding-left: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px #E6E6E6; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #00000082; 
+border-radius: 10px;
+}
+
+.grid-row td{
+    background: white;
+    font-family: Segoe UI;
+    color: #1C1E21;
+    letter-spacing: 0px;
+}
+
+.grid-row .odd{
+    padding: 10px 0;
+}
+
+.grid-row .grid-row__percent{
+    font-size: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.grid-row .grid-row__sport{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.grid-row .grid-row__age{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grid-row .grid-row__bookmark{
+    color: #04D361;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.grid-row .grid-row__bookmark hr{
+    margin: 10px 0;
+}
+
+.grid-row .grid-row__beginning-time hr{
+    margin: 4px 0;
+}
+
+.grid-row .grid-row__beginning-time .odd-a, .grid-row .grid-row__beginning-time .odd-b{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.grid-row .grid-row__beginning-time .date{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.grid-row .grid-row__beginning-time .time{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #5D646E;
+}
+
+.grid-row .grid-row__event .odd-a, .grid-row .grid-row__event .odd-b{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row .grid-row__event hr{
+    margin: 4px 0;
+}
+
+.grid-row .grid-row__event .title{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.grid-row .grid-row__event .subtitle{
+    font-size: 12px;
+    color: #5D646E;
+}
+
+.grid-row .grid-row__market{
+    font-weight: 600;
+}
+
+
+.grid-row .grid-row__market hr{
+    margin: 10px 0;
+}
+
+.grid-row .grid-row__quota hr{
+    margin: 10px 0;
+}
+
+.grid-row .grid-row__quota{
+    color: #04D361;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.grid-row .grid-row__quota{
+    color: #04D361;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+
+.grid-row .grid-row__last{
+    background-color: #D8DEEA;
+    width: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

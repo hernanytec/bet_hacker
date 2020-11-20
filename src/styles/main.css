@@ -1,5 +1,8 @@
 @import "sign-in.css";
 @import "nav-sidebar.css";
+@import "projects.css";
+@import "percent.css";
+@import "zoom.css";
 
 @tailwind base;
 

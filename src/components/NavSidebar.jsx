@@ -1,11 +1,15 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import { DiAptana } from "react-icons/di";
-import { FaSearchPlus } from "react-icons/fa";
-import { HiOutlineSwitchVertical } from "react-icons/hi";
-import { AiOutlinePercentage, AiOutlineUnorderedList } from "react-icons/ai";
-import { BiBasketball } from "react-icons/bi";
-import BetHackerIcon from '../BetHackerIcon.jpeg'
+
+import BetHackerIcon from '../assets/BetHackerLogo.png'
+import { ReactComponent as Zoom } from '../assets/zoom-in.svg';
+import { ReactComponent as Percentage } from '../assets/percentage.svg';
+import { ReactComponent as Bookmarks } from '../assets/sport-list.svg';
+import { ReactComponent as List } from '../assets/list.svg';
+import { ReactComponent as Arrows } from '../assets/arrows-sort.svg';
+import { ReactComponent as Sports } from '../assets/ball-basketball.svg';
+import { ReactComponent as Settings } from '../assets/settings.svg';
+
 
 export const NavSidebar = () => {
   const history = useHistory();
@@ -15,23 +19,27 @@ export const NavSidebar = () => {
 
   const items = [
     {
-      render: () => <FaSearchPlus />,
+      render: () => <Zoom className="svg" />,
       id: "/zoom",
     },
     {
-      render: () => <HiOutlineSwitchVertical />,
+      render: () => <Arrows className="svg" />,
       id: "/projects",
     },
     {
-      render: () => <AiOutlineUnorderedList />,
-      id: "/bookmakers",
+      render: () => <List className="svg" />,
+      id: "/list",
     },
     {
-      render: () => <AiOutlinePercentage />,
+      render: () => <Percentage className="svg" />,
       id: "/percent",
     },
     {
-      render: () => <BiBasketball />,
+      render: () => <Bookmarks className="svg" />,
+      id: "/bookmarks",
+    },
+    {
+      render: () => <Sports className="svg" />,
       id: "/sports",
     },
   ]
@@ -44,12 +52,13 @@ export const NavSidebar = () => {
     if(pageSelected === pageId){
       return 'nav-sidebar__item--selected'
     }
+    return ''
   }
 
   return (
     <div className="nav-sidbar">
       <div className="nav-header">
-        <img src={BetHackerIcon} alt="bet hacker icon" />
+        <img src={BetHackerIcon} alt="bet hacker icon" onClick={() => history.push('/')}/>
       </div>
 
       <div className="nav-filters">
@@ -63,9 +72,9 @@ export const NavSidebar = () => {
         }
       </div>
 
-      <div onClick={() => history.push('/setings')} className="nav-config">
+      <div onClick={() => history.push('/settings')} className="nav-config">
         <div className={`nav-sidebar__item ${getClasses('/setings')}`}>
-          <DiAptana />
+          <Settings className="svg" />
         </div>
       </div>
     </div>

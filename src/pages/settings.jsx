@@ -4,8 +4,8 @@ import {DashboardLayout} from '../components/Layout';
 
 const SettingsPage = () => {
   return (
-    <DashboardLayout>
-   <h2>Zoom</h2>
+    <DashboardLayout showGrid={false}>
+
     </DashboardLayout>
   )
 }

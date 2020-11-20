@@ -1,0 +1,69 @@
+.bet-header .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bet-header .left{
+    display: flex;
+    align-items: center;
+}
+
+.bet-header .title{
+    color: #030303;
+    font-family: Segoe UI;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.bet-header hr{
+    height: 1px;
+    margin-top: 10px;
+    background-color: #B3B3B3;
+}
+
+
+.input-search{
+    display: flex;
+    background-color: #e2e2e2;
+    width: fit-content;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+.input-search .svg{
+    width: 20px;
+    margin: auto 0 auto 10px;
+}
+
+.input-search input{
+    background-color:#e2e2e2;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.input-search input::placeholder{
+    color:#5D646E;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .username {
+    font-family: Segoe UI;
+    color: #999999;
+}
+
+.profile .money {
+    font-weight: 600;
+    color: #1C1E21
+}

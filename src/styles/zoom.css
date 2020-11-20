@@ -1,0 +1,31 @@
+.zoom-title{
+    font-weight: 600;
+    font-family: Segoe UI;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+.container button{
+    width: 30px;
+    border-radius: 10px;
+}
+.container .sub-button{
+    background-color: #B3B3B3;
+}
+
+.container .add-button{
+    background-color: #04D361;
+}
+
+.container button span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container span{
+    margin: 0 5px;
+}

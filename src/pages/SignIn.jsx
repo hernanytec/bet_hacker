@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Button from "../components/Button";
 import Input from "../components/Input";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import leftBg from "../assets/left.jpg"
 import rightBg from "../assets/right.jpg"
@@ -23,7 +25,7 @@ const SignIn = () => {
       await login({ username: email, password })
       history.push('/')
     } catch (err) {
-      // TODO: handle err
+      toast.error(err.message)
     }
   }
 
@@ -33,17 +35,19 @@ const SignIn = () => {
         nome: name,
         usuario: {
           email,
-          password
+          password,
         }
       })
       setSignUp(false)
+      toast.success('Success!')
     } catch (err) {
-      // TODO: handle err
+      toast.error(err.message)
     }
   }
 
   return (
     <section className="sign-in">
+      <ToastContainer />
       <div className="page-bg">
         <img className="left-bg" src={leftBg} alt="left" />
         <img className="right-bg" src={rightBg} alt="right" />
