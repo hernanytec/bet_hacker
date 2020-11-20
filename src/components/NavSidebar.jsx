@@ -73,7 +73,7 @@ export const NavSidebar = () => {
       </div>
 
       <div onClick={() => history.push('/settings')} className="nav-config">
-        <div className={`nav-sidebar__item ${getClasses('/setings')}`}>
+        <div className={`nav-sidebar__item ${getClasses('/settings')}`}>
           <Settings className="svg" />
         </div>
       </div>
