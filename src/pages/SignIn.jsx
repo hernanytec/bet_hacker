@@ -23,7 +23,7 @@ const SignIn = () => {
   const doSignIn = async () => {
     try {
       await login({ username: email, password })
-      history.push('/')
+      history.push('/sports')
     } catch (err) {
       toast.error(err.message)
     }
