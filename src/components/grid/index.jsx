@@ -10,7 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { toast, ToastContainer } from 'react-toastify';
 
-import {format, parseISO} from 'date-fns' 
+import {format, formatDistance, parseISO} from 'date-fns' 
 
 import { getEsportes } from '../../service/oddService'
 import './style.css'
@@ -57,6 +57,14 @@ const Grid = ({ filters }) => {
         return format(parsed, "dd MMM")
     }
 
+    const getAge = (date, time) =>{
+        const gameDate = parseISO(`${date.split('.').reverse().join('-')} ${time}`)
+        const currentDate = Date.now()
+        
+        const distance = formatDistance(gameDate, currentDate);
+        return distance
+    }
+
     return (
         <div className="grid-container">
             {
@@ -96,7 +104,7 @@ const Grid = ({ filters }) => {
                                                 {esporte.name}
                                             </TableCell>
                                             <TableCell className="grid-row__age">
-                                                14h
+                                                {getAge(jogo.date, jogo.time)}
                                             </TableCell>
                                             <TableCell className="odd grid-row__bookmark">
                                                 <div className="odd-a">
