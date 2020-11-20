@@ -31,7 +31,6 @@ const BetHeader = () => {
                         <Avatar />
                         <div className="info">
                             <div className="username">{userName}</div>
-                            <div className="money">USD 117.98</div>
                         </div>
                     </div>
                 </div>
